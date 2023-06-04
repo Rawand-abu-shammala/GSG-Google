@@ -9,6 +9,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
+    background-color: #252323;
 }
 
 /* start style navbar */
@@ -24,7 +25,7 @@ nav a {
 	display: inline-block;
 	line-height: 24px;
 	font-weight: 400;
-	color: rgb(0,0,0, 0.87);
+	color: white;
 	cursor: pointer;
 	padding: 5px 6.7px
 }
@@ -72,8 +73,8 @@ nav button {
 }
 .s-box .s-input {
 	display: block;
-	border: 1px solid #ddd;
-	color: rgba(0,0,0, 0.87);
+	/* border: 1px solid #ddd; */
+
 	font-size: 16px;
 	padding: 13px;
 	padding-left: 45px;
@@ -82,16 +83,7 @@ nav button {
 	transition: box-shadow 100ms;
 	outline: none;
 }
-.s-box  .s-input:hover {
-	border: 1px solid #fff;
-	box-shadow: 0 0 2px rgba(0, 0, 0, 0.05), 
-				0 0 2px rgba(0, 0, 0, 0.05),
-				0 0 3px rgba(0, 0, 0, 0.05),
-				0 0 4px rgba(0, 0, 0, 0.05), 
-				0 0 5px rgba(0, 0, 0, 0.05), 
-				0 0 4px rgba(0, 0, 0, 0.05), 
-				0 0 5px rgba(0, 0, 0, 0.05)
-}
+
 .s-box .search-icon {
 	width: 20px;
 	opacity: .4;
@@ -108,7 +100,8 @@ nav button {
 .s-btn {
 	border: 1px solid transparent;
 	padding: 9px 15px;
-	color: #666;
+	color: white;
+    background-color: #2e2e2f;
 	font-size: 14px;
 	border-radius: 4px;
 	display: inline-block;
@@ -118,14 +111,12 @@ nav button {
 	cursor: pointer;
 	transition: border-color 100ms;
 }
-.s-btn:hover {
-	border: 1px solid #aaa;
-}
+
 .lang {
 	margin-top: 30px;
 	text-align: center;
 	font-size: 13px;
-	color: #111;
+	color: white;
 }
 .lang a {
 	margin-left: 5px;
@@ -134,33 +125,32 @@ nav button {
 .lang a:hover {
 	text-decoration: underline;
 }
-footer {
-	background: #f2f2f2;
-}
+
 /* end style search field  */
 /* start Create footer */
+
 footer {
-	background: #f2f2f2;
+    background-color: #2e2e2f;
 }
 footer h4 {
-	color: rgba(0,0,0, 0.54);
+	color: white;
 	font-size: 15px;
 	line-height: 39.5px;
 	font-weight: 400;
 	padding-left: 29px;
-	border: 1px solid #eee;
 }
 footer a {
-	color: #5f6368;
+	color: #ffffff;
 	display: inline-block;
 	padding: 12px 11.3px;
 	font-size: 14px;
+    border: 1px solid #4b4a4a;
 }
 footer a:hover {
 	text-decoration: underline;
 }
 .links {
-	border-top: 1px solid #ddd;
+	border-top: 1px solid #4b4a4a;
 	display: flex;
 }
 .link-1 {
@@ -172,6 +162,55 @@ footer a:hover {
 }
 /* end Create footer */
 
+/* create responsive */
+
+@media (max-width: 480px) {
+.section-1 .logo {
+    margin-top: 40px;
+}
+
+.s-box .s-input {
+    padding: 10px;
+    font-size: 14px;
+}
+
+.s-btn {
+    margin-top: 20px;
+}
+
+.lang {
+    margin-top: 10px;
+}
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+.section-1 .logo {
+    margin-top: 60px;
+}
+
+.s-box .s-input {
+    padding: 12px;
+    font-size: 16px;
+}
+
+.s-btn {
+    margin-top: 24px;
+}
+
+.lang {
+    margin-top: 20px;
+}
+}
+
+@media (min-width: 769px) {
+.section-1 .logo {
+    margin-top: 107px;
+}
+
+.s-box {
+    max-width: 580px;
+}
+}
 
 
 
